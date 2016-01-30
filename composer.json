@@ -1,0 +1,21 @@
+{
+    "name": "ineersa/converter",
+    "description": "Currency converter for ECB",
+    "type": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "Illya Vasylevskiy",
+            "email": "ineersa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"Ineersa\\Converter\\": "src/"}
+    }
+}
