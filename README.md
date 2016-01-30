@@ -4,6 +4,9 @@ Simple API for currency converting.
 Currently using ECB currency rates service.
 [http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml](http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml)
 
+### Instalation:
+```composer require ineersa/converter```
+
 ### Features:
 * results caching
 * easy to extend
