@@ -37,7 +37,7 @@ echo $service->getRate('USD');
 
 You can control what client, adapter or cache you want to use via service. For example:
 ```php
-$cache = new RedisCache();
+$cache = new MemcacheCache();
 $service = new EcbService($cache);
 echo $service->getRate('USD');
 ```
