@@ -44,6 +44,7 @@ echo $service->getRate('USD');
 
 ### [openexchangerates](https://openexchangerates.org) was added in version 1.0.1
 To get appp_id token visit [openexchangerates](https://openexchangerates.org) and sign up.
+
 Free plan exists (1000 requests per month), which is fairly enough for simple usage.
 
 ###Examples of usage:

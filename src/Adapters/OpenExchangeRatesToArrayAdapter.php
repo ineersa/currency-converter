@@ -6,6 +6,11 @@ use Ineersa\Converter\Interfaces\AdapterInterface;
 
 class OpenExchangeRatesToArrayAdapter implements AdapterInterface
 {
+    /**
+     * @param mixed $data
+     * @return mixed
+     * @throws BadDataException
+     */
     public function parse($data)
     {
         try{
@@ -15,7 +20,7 @@ class OpenExchangeRatesToArrayAdapter implements AdapterInterface
         }
         if (empty($decoded) || !array_key_exists('rates',$decoded))
             throw new BadDataException;
-        var_dump($decoded);die();
+
         $base = $decoded['base'];
         $decoded['rates'][$base] = 1;
 

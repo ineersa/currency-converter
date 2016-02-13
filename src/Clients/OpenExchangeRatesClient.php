@@ -29,6 +29,11 @@ class OpenExchangeRatesClient implements ClientInterface
      */
     private $symbols='';
 
+    /**
+     * OpenExchangeRatesClient constructor.
+     * @param CacheInterface $cache
+     * @param null $appId
+     */
     public function __construct(CacheInterface $cache, $appId=null)
     {
         $this->cache = $cache;
@@ -36,6 +41,9 @@ class OpenExchangeRatesClient implements ClientInterface
             $this->setAppId($appId);
     }
 
+    /**
+     * @param $appId
+     */
     public function setAppId($appId)
     {
         $this->appId = $appId;
@@ -96,6 +104,9 @@ class OpenExchangeRatesClient implements ClientInterface
         }
     }
 
+    /**
+     * @param $symbols
+     */
     public function setSymbols($symbols)
     {
         if (!empty($symbols)){
